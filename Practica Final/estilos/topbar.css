@@ -1,0 +1,78 @@
+#navTopbar {
+    overflow: hidden;
+    z-index: 2;
+    /*background-color: rgb(7, 7, 7); /* tenemos que asignarle un color de fondo al topbar si queremos que no sea transparente */ 
+    position: fixed; /* Deja la barra superior fija */
+    top: 0; /* coloca la barra superior encima de la pagina web */
+    width: 100%; /* ocupa todo el ancho de la pagina */
+    border-bottom: 2px solid #dcdcdc; /* hacemos que la barra de navegacion tenga un borde inferior que ayude a separar la sección*/
+    height: 50px; /*queremos que no cambie de altura aun si modificamos el tamaño de la pagina */
+}
+
+#ulTopbar {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+#liTopbarizq, #liTopbarcent{
+    float:left;
+}
+#liTopbarcent{
+    width: 50%; 
+    padding-left: 30%;
+}
+
+#liTopbarDer{
+
+}
+
+#logoTitulo{
+    height: 55px;
+    width: 55px;
+   margin-right: 0px;
+   float: left;
+}
+
+.topbarDer, #topbarIzq, #topbarTitulo{    
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color:  rgb(255, 27, 45);
+    width: auto;
+    text-decoration: 0;
+}
+.topbarDer {
+    width: 250px;
+   
+    background-color: #111;
+    float: right;
+}
+.topbarDer a{
+    color:  rgb(255, 27, 45);
+    padding: 7% 7%;
+}
+
+
+#topbarTitulo{
+    padding: 0%;
+    color: rgb(255, 27, 45);
+ 
+ cursor: default;
+ float: left;
+}
+
+/*separacion con el Main content */
+   section#mainContent {
+    padding-top: 2%;
+      margin-top: 2%; /* Add a top margin to avoid content overlay */
+}
+
+/* queremos que cuando se haga hover sobre los botones se cambie el color */
+.enlaceHover:hover {
+    background: #f1f1f1;
+    color: #111;
+  }
